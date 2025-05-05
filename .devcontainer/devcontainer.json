@@ -1,0 +1,28 @@
+{
+  "name": "Node.js",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1.1.8-20-bullseye",
+  "onCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      },
+      "extensions": [
+        // Liquid tags auto-complete
+        "killalau.vscode-liquid-snippets",
+        // Liquid syntax highlighting and formatting
+        "Shopify.theme-check-vscode",
+        // Shell
+        "timonwong.shellcheck",
+        "mkhl.shfmt",
+        // Common formatter
+        "EditorConfig.EditorConfig",
+        "yzhang.markdown-all-in-one",
+        "biomejs.biome",
+        // Git
+        "mhutchie.git-graph"
+      ]
+    }
+  }
+}
