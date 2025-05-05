@@ -1,8 +1,5 @@
-import 'dotenv/config';
-
 import * as p from '@clack/prompts';
 import { Command } from 'commander';
-import { z } from 'zod';
 
 import { CONFIG_FILE, loadConfig } from 'src/services/config';
 import { createTranslator } from 'src/services/translation/translator';
